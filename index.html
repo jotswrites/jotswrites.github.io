@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jotswrites — AI Productivity Playbooks for Professionals</title>
+  <meta name="description" content="Practical AI productivity guides for Virtual Assistants, Social Media Managers, Data Analysts, and more. Written by Jots. Available on Amazon." />
+  <meta name="keywords" content="AI productivity book, AI guide for virtual assistants, AI tools for professionals, AI productivity playbook, books for virtual assistants 2026, AI for social media managers, AI for data analysts, jotswrites" />
+  <meta name="author" content="Jots — Jotswrites" />
+  <meta name="google-site-verification" content="0p0PFUqvUEfvd1Yn-pQ9hnyBWiIeGmG91uMsia0yO6k" />
+  <meta property="og:title" content="Jotswrites — AI Productivity Playbooks for Professionals" />
+  <meta property="og:description" content="Practical AI productivity guides for professionals who want to work smarter. 12 books planned for 2026. Available on Amazon." />
+  <meta property="og:url" content="https://jotswrites.tiiny.host" />
+  <meta property="og:type" content="website" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Jotswrites — AI Productivity Playbooks" />
+  <meta name="twitter:description" content="Practical AI guides for professionals. Written by Jots. Available on Amazon." />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --ink: #0f0f0f; --paper: #faf8f5; --cream: #f2ede6;
+      --accent: #c8622a; --accent-light: #f0d5c4; --muted: #7a7268; --border: #ddd8d0;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'DM Sans', sans-serif; background: var(--paper); color: var(--ink); line-height: 1.6; overflow-x: hidden; }
+    nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.2rem 6%; background: rgba(250,248,245,0.92); backdrop-filter: blur(10px); border-bottom: 1px solid var(--border); }
+    .nav-logo { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 900; letter-spacing: -0.5px; color: var(--ink); text-decoration: none; }
+    .nav-logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { text-decoration: none; color: var(--muted); font-size: 0.9rem; font-weight: 500; transition: color 0.2s; }
+    .nav-links a:hover { color: var(--accent); }
+    #hero { min-height: 100vh; display: grid; grid-template-columns: 1fr 1fr; align-items: center; padding: 7rem 6% 4rem; gap: 4rem; }
+    .hero-text { animation: fadeUp 0.9s ease both; }
+    .hero-eyebrow { display: inline-block; font-size: 0.78rem; font-weight: 600; letter-spacing: 2.5px; text-transform: uppercase; color: var(--accent); background: var(--accent-light); padding: 0.35rem 1rem; border-radius: 100px; margin-bottom: 1.5rem; }
+    .hero-title { font-family: 'Playfair Display', serif; font-size: clamp(2.8rem, 5vw, 4.5rem); font-weight: 900; line-height: 1.1; letter-spacing: -1.5px; color: var(--ink); margin-bottom: 1.5rem; }
+    .hero-title em { font-style: italic; color: var(--accent); }
+    .hero-sub { font-size: 1.1rem; color: var(--muted); max-width: 480px; margin-bottom: 2.5rem; line-height: 1.75; font-weight: 300; }
+    .hero-ctas { display: flex; gap: 1rem; flex-wrap: wrap; }
+    .btn { display: inline-block; padding: 0.85rem 2rem; border-radius: 6px; font-size: 0.95rem; font-weight: 600; text-decoration: none; transition: all 0.22s ease; cursor: pointer; border: none; }
+    .btn-primary { background: var(--accent); color: #fff; box-shadow: 0 4px 20px rgba(200,98,42,0.3); }
+    .btn-primary:hover { background: #b0531f; transform: translateY(-2px); }
+    .btn-outline { background: transparent; color: var(--ink); border: 1.5px solid var(--border); }
+    .btn-outline:hover { border-color: var(--ink); background: var(--cream); }
+    .hero-visual { animation: fadeUp 0.9s 0.2s ease both; display: flex; justify-content: center; align-items: center; position: relative; }
+    .book-stack { position: relative; width: 280px; height: 360px; }
+    .book-card { position: absolute; width: 200px; height: 280px; border-radius: 4px 12px 12px 4px; display: flex; flex-direction: column; justify-content: flex-end; padding: 1.5rem; font-family: 'Playfair Display', serif; box-shadow: 8px 8px 40px rgba(0,0,0,0.15); }
+    .book-card-1 { background: linear-gradient(145deg,#1a1a2e,#16213e); top: 40px; left: 60px; transform: rotate(4deg); z-index: 1; }
+    .book-card-2 { background: linear-gradient(145deg,#c8622a,#a0481c); top: 20px; left: 20px; transform: rotate(-3deg); z-index: 2; }
+    .book-card-3 { background: linear-gradient(145deg,#2d4a3e,#1a3028); top: 60px; left: 40px; transform: rotate(1deg); z-index: 3; transition: transform 0.3s ease; }
+    .book-card-3:hover { transform: rotate(1deg) translateY(-10px); }
+    .book-label { font-size: 0.65rem; letter-spacing: 2px; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 0.4rem; }
+    .book-title-card { font-size: 0.95rem; color: #fff; font-weight: 700; line-height: 1.3; }
+    .book-spine { position: absolute; left: -18px; top: 0; bottom: 0; width: 18px; background: #1a2518; border-radius: 4px 0 0 4px; }
+    .float-badge { position: absolute; bottom: 20px; right: 0; background: #fff; border-radius: 12px; padding: 0.8rem 1.1rem; box-shadow: 0 8px 30px rgba(0,0,0,0.12); display: flex; align-items: center; gap: 0.6rem; animation: float 3s ease-in-out infinite; }
+    .float-badge-icon { font-size: 1.4rem; }
+    .float-badge-text { font-size: 0.78rem; font-weight: 600; color: var(--ink); }
+    .float-badge-sub { font-size: 0.68rem; color: var(--muted); }
+    @keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+    section { padding: 6rem 6%; }
+    .section-tag { font-size: 0.75rem; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; display: block; }
+    .section-title { font-family: 'Playfair Display', serif; font-size: clamp(2rem,3.5vw,2.8rem); font-weight: 900; letter-spacing: -0.8px; line-height: 1.15; margin-bottom: 1rem; }
+    .section-sub { color: var(--muted); font-size: 1rem; max-width: 540px; line-height: 1.75; font-weight: 300; }
+    #about { background: var(--ink); color: var(--paper); }
+    #about .section-title { color: var(--paper); }
+    #about .section-tag { color: var(--accent-light); }
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; margin-top: 3rem; }
+    .about-avatar { width: 100%; aspect-ratio: 4/5; background: linear-gradient(145deg,#1e1e1e,#2a2a2a); border-radius: 16px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 1rem; border: 1px solid rgba(255,255,255,0.06); position: relative; overflow: hidden; }
+    .about-avatar::before { content: ''; position: absolute; top: -40%; left: -40%; width: 80%; height: 80%; background: radial-gradient(circle,rgba(200,98,42,0.15),transparent 70%); border-radius: 50%; }
+    .avatar-initials { font-family: 'Playfair Display', serif; font-size: 5rem; font-weight: 900; color: var(--accent); line-height: 1; }
+    .avatar-name { font-size: 0.85rem; letter-spacing: 3px; text-transform: uppercase; color: rgba(255,255,255,0.4); }
+    .about-content p { color: rgba(250,248,245,0.7); font-size: 1rem; line-height: 1.85; margin-bottom: 1.5rem; font-weight: 300; }
+    .about-content p strong { color: var(--paper); font-weight: 600; }
+    .stats-row { display: flex; gap: 2.5rem; margin-top: 2.5rem; padding-top: 2rem; border-top: 1px solid rgba(255,255,255,0.08); }
+    .stat-num { font-family: 'Playfair Display', serif; font-size: 2.2rem; font-weight: 900; color: var(--accent); line-height: 1; }
+    .stat-label { font-size: 0.78rem; color: rgba(255,255,255,0.4); margin-top: 0.3rem; letter-spacing: 0.5px; }
+    #books { background: var(--cream); }
+    .books-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 3rem; flex-wrap: wrap; gap: 1rem; }
+    .series-badge { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--accent-light); color: var(--accent); font-size: 0.78rem; font-weight: 600; letter-spacing: 1px; padding: 0.4rem 1rem; border-radius: 100px; margin-bottom: 1rem; }
+    .books-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(280px,1fr)); gap: 2rem; }
+    .book-item { background: var(--paper); border-radius: 16px; overflow: hidden; border: 1px solid var(--border); transition: transform 0.25s ease,box-shadow 0.25s ease; }
+    .book-item:hover { transform: translateY(-6px); box-shadow: 0 20px 50px rgba(0,0,0,0.1); }
+    .book-cover { width: 100%; height: 220px; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 2rem; text-align: center; position: relative; }
+    .cover-1 { background: linear-gradient(145deg,#0f1923,#1a2f45); }
+    .cover-2 { background: linear-gradient(145deg,#1a1a2e,#2d1b4e); }
+    .cover-3 { background: linear-gradient(145deg,#0d2818,#1a4530); }
+    .cover-4 { background: linear-gradient(145deg,#2d1a0e,#4a2910); }
+    .cover-icon { font-size: 2.5rem; margin-bottom: 0.8rem; opacity: 0.9; }
+    .cover-series { font-size: 0.6rem; letter-spacing: 2.5px; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 0.6rem; }
+    .cover-title { font-family: 'Playfair Display', serif; font-size: 1rem; font-weight: 700; color: #fff; line-height: 1.3; }
+    .available-tag { position: absolute; top: 1rem; right: 1rem; background: #22c55e; color: #fff; font-size: 0.62rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 0.25rem 0.65rem; border-radius: 100px; }
+    .coming-tag { position: absolute; top: 1rem; right: 1rem; background: rgba(255,255,255,0.12); color: rgba(255,255,255,0.6); font-size: 0.62rem; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; padding: 0.25rem 0.65rem; border-radius: 100px; }
+    .book-info { padding: 1.5rem; }
+    .book-info h3 { font-family: 'Playfair Display', serif; font-size: 1.05rem; font-weight: 700; margin-bottom: 0.5rem; line-height: 1.3; }
+    .book-info p { font-size: 0.85rem; color: var(--muted); line-height: 1.6; margin-bottom: 1.2rem; font-weight: 300; }
+    .book-actions { display: flex; gap: 0.75rem; }
+    .btn-sm { padding: 0.55rem 1.1rem; font-size: 0.82rem; border-radius: 6px; font-weight: 600; text-decoration: none; transition: all 0.2s; }
+    .btn-sm-primary { background: var(--accent); color: #fff; }
+    .btn-sm-primary:hover { background: #b0531f; }
+    .btn-sm-ghost { background: var(--cream); color: var(--ink); border: 1px solid var(--border); }
+    .btn-sm-ghost:hover { background: var(--border); }
+    .roadmap { margin-top: 4rem; background: var(--paper); border-radius: 20px; padding: 2.5rem; border: 1px solid var(--border); }
+    .roadmap h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; margin-bottom: 0.4rem; }
+    .roadmap p { font-size: 0.88rem; color: var(--muted); margin-bottom: 2rem; }
+    .roadmap-items { display: flex; flex-direction: column; gap: 0; }
+    .roadmap-item { display: flex; align-items: center; gap: 1.2rem; padding: 1rem 0; border-bottom: 1px dashed var(--border); }
+    .roadmap-item:last-child { border-bottom: none; }
+    .roadmap-dot { width: 36px; height: 36px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 700; flex-shrink: 0; }
+    .dot-done { background: var(--accent); color: #fff; }
+    .dot-next { background: var(--accent-light); color: var(--accent); }
+    .dot-soon { background: var(--cream); color: var(--muted); border: 1.5px dashed var(--border); }
+    .roadmap-label { font-size: 0.9rem; font-weight: 500; }
+    .roadmap-status { margin-left: auto; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.5px; }
+    .status-done { color: #22c55e; }
+    .status-next { color: var(--accent); }
+    .status-soon { color: var(--muted); }
+    #contact { background: var(--paper); display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: start; }
+    .contact-info .section-sub { margin-bottom: 2.5rem; }
+    .contact-links { display: flex; flex-direction: column; gap: 1rem; margin-top: 2rem; }
+    .contact-link { display: flex; align-items: center; gap: 1rem; text-decoration: none; color: var(--ink); padding: 1rem 1.2rem; border-radius: 12px; border: 1px solid var(--border); background: var(--cream); font-size: 0.9rem; font-weight: 500; transition: all 0.2s; }
+    .contact-link:hover { border-color: var(--accent); background: var(--accent-light); color: var(--accent); }
+    .contact-link-icon { font-size: 1.2rem; }
+    .contact-form { background: var(--cream); border-radius: 20px; padding: 2.5rem; border: 1px solid var(--border); }
+    .contact-form h3 { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 700; margin-bottom: 1.5rem; }
+    .form-group { margin-bottom: 1.2rem; }
+    .form-group label { display: block; font-size: 0.82rem; font-weight: 600; color: var(--muted); margin-bottom: 0.5rem; }
+    .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 0.8rem 1rem; border-radius: 8px; border: 1.5px solid var(--border); background: var(--paper); font-family: 'DM Sans', sans-serif; font-size: 0.9rem; color: var(--ink); transition: border-color 0.2s; outline: none; resize: vertical; }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--accent); }
+    .form-group textarea { min-height: 110px; }
+    footer { background: var(--ink); color: rgba(255,255,255,0.4); text-align: center; padding: 2.5rem 6%; font-size: 0.85rem; }
+    footer .footer-logo { font-family: 'Playfair Display', serif; font-size: 1.4rem; font-weight: 900; color: var(--paper); margin-bottom: 0.5rem; }
+    footer .footer-logo span { color: var(--accent); }
+    footer .footer-links { display: flex; justify-content: center; gap: 2rem; margin: 1.2rem 0; list-style: none; }
+    footer .footer-links a { color: rgba(255,255,255,0.4); text-decoration: none; font-size: 0.82rem; transition: color 0.2s; }
+    footer .footer-links a:hover { color: var(--accent); }
+    @keyframes fadeUp { from{opacity:0;transform:translateY(28px)} to{opacity:1;transform:translateY(0)} }
+    @media(max-width:768px){ #hero{grid-template-columns:1fr;padding-top:6rem} .hero-visual{display:none} .about-grid{grid-template-columns:1fr;gap:2.5rem} #contact{grid-template-columns:1fr;gap:2.5rem} .books-header{flex-direction:column;align-items:flex-start} .nav-links{display:none} .stats-row{gap:1.5rem} }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a class="nav-logo" href="#hero">Jots<span>writes</span></a>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#books">Books</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a class="btn btn-primary" href="#books" style="padding:0.6rem 1.4rem;font-size:0.85rem;">Browse Books</a>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-text">
+      <span class="hero-eyebrow">&#10022; Author &amp; Knowledge Creator</span>
+      <h1 class="hero-title">Words that<br/><em>educate,</em><br/>empower &amp;<br/>elevate.</h1>
+      <p class="hero-sub">Hi, I'm <strong>Jots</strong> — I write practical, no-fluff books on education, careers, and technology. My goal is simple: give you the knowledge to move faster and smarter in your field.</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#books">Explore My Books</a>
+        <a class="btn btn-outline" href="#about">About Me</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="book-stack">
+        <div class="book-card book-card-1"><div class="book-label">Series 01</div><div class="book-title-card">AI Productivity Playbooks</div></div>
+        <div class="book-card book-card-2"><div class="book-label">Coming Soon</div><div class="book-title-card">Social Managers Edition</div></div>
+        <div class="book-card book-card-3"><div class="book-spine"></div><div class="book-label">Available Now</div><div class="book-title-card">AI Productivity Playbook for VAs</div></div>
+      </div>
+      <div class="float-badge"><span class="float-badge-icon">&#128218;</span><div><div class="float-badge-text">New Release</div><div class="float-badge-sub">AI Productivity Playbook</div></div></div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div style="max-width:1100px;margin:0 auto;">
+      <span class="section-tag">Who is Jots?</span>
+      <div class="about-grid">
+        <div class="about-avatar"><div class="avatar-initials">J.</div><div class="avatar-name">Jotswrites</div></div>
+        <div class="about-content">
+          <h2 class="section-title">Turning complex ideas into clear, actionable knowledge.</h2>
+          <p>I write books that are <strong>direct, practical, and immediately useful</strong>. No padding, no fluff — just the knowledge you need to excel in your career, navigate technology, and grow educationally.</p>
+          <p>I work in focused series: I dive deep into one theme, complete the series, and then move on to the next. Right now, I'm building out the <strong>AI Productivity Playbook</strong> series — a collection of profession-specific guides for thriving in an AI-powered world.</p>
+          <p>Whether you're a virtual assistant, a social media manager, or a professional looking to stay ahead of the curve — there's a book in this series written <strong>specifically for you</strong>.</p>
+          <div class="stats-row">
+            <div><div class="stat-num">1+</div><div class="stat-label">Published Books</div></div>
+            <div><div class="stat-num">12</div><div class="stat-label">Books This Year</div></div>
+            <div><div class="stat-num">&#8734;</div><div class="stat-label">Ideas to Share</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="books">
+    <div style="max-width:1100px;margin:0 auto;">
+      <div class="books-header">
+        <div>
+          <div class="series-badge">&#128293; Current Series</div>
+          <h2 class="section-title">AI Productivity Playbooks</h2>
+          <p class="section-sub">A profession-by-profession guide to using AI tools to work smarter, faster, and better.</p>
+        </div>
+      </div>
+      <div class="books-grid">
+
+        <div class="book-item">
+          <div class="book-cover cover-1"><span class="available-tag">Available</span><div class="cover-icon">&#129302;</div><div class="cover-series">AI Productivity Playbook · Vol. 1</div><div class="cover-title">For Virtual Assistants</div></div>
+          <div class="book-info">
+            <h3>AI Productivity Playbook for Virtual Assistants</h3>
+            <p>The definitive guide for VAs ready to leverage AI tools to serve more clients, automate repetitive tasks, and become irreplaceable.</p>
+            <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:1rem;"><span style="font-size:1.1rem;font-weight:700;color:var(--accent);">$2.99</span><span style="font-size:0.88rem;color:var(--muted);text-decoration:line-through;">$7.99</span><span style="font-size:0.68rem;font-weight:700;background:#fef3c7;color:#b45309;padding:0.2rem 0.55rem;border-radius:100px;">Amazon KDP</span></div>
+            <div class="book-actions"><a href="https://www.amazon.com/dp/B0GTBD135R" target="_blank" class="btn-sm btn-sm-primary">Buy on Amazon — $2.99</a><a href="https://www.amazon.com/dp/B0GTBD135R" target="_blank" class="btn-sm btn-sm-ghost">View on Amazon</a></div>
+          </div>
+        </div>
+
+        <div class="book-item">
+          <div class="book-cover cover-2"><span class="coming-tag">Coming Soon</span><div class="cover-icon">&#128242;</div><div class="cover-series">AI Productivity Playbook · Vol. 2</div><div class="cover-title">For Social Media Managers</div></div>
+          <div class="book-info">
+            <h3>AI Productivity Playbook for Social Media Managers</h3>
+            <p>How social media managers can use AI to create content faster, analyze performance smarter, and scale their results without burning out.</p>
+            <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:1rem;"><span style="font-size:0.78rem;font-weight:600;color:var(--accent);background:var(--accent-light);padding:0.25rem 0.7rem;border-radius:100px;">Dropping Very Soon</span></div>
+            <div class="book-actions"><a href="mailto:jotswrites@gmail.com?subject=Notify me: AI Playbook for Social Media Managers" class="btn-sm btn-sm-primary">Notify Me</a><a href="#contact" class="btn-sm btn-sm-ghost">Learn More</a></div>
+          </div>
+        </div>
+
+        <div class="book-item">
+          <div class="book-cover cover-3"><span class="coming-tag">Coming Soon</span><div class="cover-icon">&#128202;</div><div class="cover-series">AI Productivity Playbook · Vol. 3</div><div class="cover-title">For Data Analysts</div></div>
+          <div class="book-info">
+            <h3>AI Productivity Playbook for Data Analysts</h3>
+            <p>How data analysts can use AI to clean, visualize, and interpret data faster and deliver insights that actually drive decisions.</p>
+            <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:1rem;"><span style="font-size:0.78rem;font-weight:600;color:var(--muted);background:var(--cream);padding:0.25rem 0.7rem;border-radius:100px;border:1px solid var(--border);">Coming This Year</span></div>
+            <div class="book-actions"><a href="mailto:jotswrites@gmail.com?subject=Notify me: AI Playbook for Data Analysts" class="btn-sm btn-sm-ghost">Notify Me</a></div>
+          </div>
+        </div>
+
+        <div class="book-item">
+          <div class="book-cover cover-4"><span class="coming-tag">Coming Soon</span><div class="cover-icon">&#9997;&#65039;</div><div class="cover-series">AI Productivity Playbook · Vol. 4</div><div class="cover-title">For Content Creators &amp; Copywriters</div></div>
+          <div class="book-info">
+            <h3>AI Productivity Playbook for Content Creators &amp; Copywriters</h3>
+            <p>Use AI to ideate, draft, and publish compelling content at scale without losing your unique voice or creative edge.</p>
+            <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:1rem;"><span style="font-size:0.78rem;font-weight:600;color:var(--muted);background:var(--cream);padding:0.25rem 0.7rem;border-radius:100px;border:1px solid var(--border);">Coming This Year</span></div>
+            <div class="book-actions"><a href="mailto:jotswrites@gmail.com?subject=Notify me: AI Playbook for Content Creators" class="btn-sm btn-sm-ghost">Notify Me</a></div>
+          </div>
+        </div>
+
+        <div class="book-item">
+          <div class="book-cover cover-1"><span class="coming-tag">Coming Soon</span><div class="cover-icon">&#128203;</div><div class="cover-series">AI Productivity Playbook · Vol. 5</div><div class="cover-title">For Project Managers</div></div>
+          <div class="book-info">
+            <h3>AI Productivity Playbook for Project Managers</h3>
+            <p>Plan smarter, communicate clearer, and deliver projects on time using AI tools built for the modern project manager.</p>
+            <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:1rem;"><span style="font-size:0.78rem;font-weight:600;color:var(--muted);background:var(--cream);padding:0.25rem 0.7rem;border-radius:100px;border:1px solid var(--border);">Coming This Year</span></div>
+            <div class="book-actions"><a href="mailto:jotswrites@gmail.com?subject=Notify me: AI Playbook for Project Managers" class="btn-sm btn-sm-ghost">Notify Me</a></div>
+          </div>
+        </div>
+
+        <div class="book-item">
+          <div class="book-cover cover-2"><span class="coming-tag">Coming Soon</span><div class="cover-icon">&#127911;</div><div class="cover-series">AI Productivity Playbook · Vol. 6</div><div class="cover-title">For Customer Support Specialists</div></div>
+          <div class="book-info">
+            <h3>AI Productivity Playbook for Customer Support Specialists</h3>
+            <p>Resolve tickets faster, personalise every interaction, and exceed customer expectations using the latest AI support tools.</p>
+            <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:1rem;"><span style="font-size:0.78rem;font-weight:600;color:var(--muted);background:var(--cream);padding:0.25rem 0.7rem;border-radius:100px;border:1px solid var(--border);">Coming This Year</span></div>
+            <div class="book-actions"><a href="mailto:jotswrites@gmail.com?subject=Notify me: AI Playbook for Customer Support" class="btn-sm btn-sm-ghost">Notify Me</a></div>
+          </div>
+        </div>
+
+        <div class="book-item">
+          <div class="book-cover cover-3"><span class="coming-tag">Coming Soon</span><div class="cover-icon">&#127912;</div><div class="cover-series">AI Productivity Playbook · Vol. 7</div><div class="cover-title">For Graphic Designers</div></div>
+          <div class="book-info">
+            <h3>AI Productivity Playbook for Graphic Designers</h3>
+            <p>From ideation to final design — discover how AI tools can supercharge your creative workflow and help you deliver more for clients.</p>
+            <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:1rem;"><span style="font-size:0.78rem;font-weight:600;color:var(--muted);background:var(--cream);padding:0.25rem 0.7rem;border-radius:100px;border:1px solid var(--border);">Coming This Year</span></div>
+            <div class="book-actions"><a href="mailto:jotswrites@gmail.com?subject=Notify me: AI Playbook for Graphic Designers" class="btn-sm btn-sm-ghost">Notify Me</a></div>
+          </div>
+        </div>
+
+        <div class="book-item">
+          <div class="book-cover cover-4"><span class="coming-tag">Coming Soon</span><div class="cover-icon">&#127979;</div><div class="cover-series">AI Productivity Playbook · Vol. 8</div><div class="cover-title">For Educators &amp; Teachers</div></div>
+          <div class="book-info">
+            <h3>AI Productivity Playbook for Educators &amp; Teachers</h3>
+            <p>Save hours on lesson planning, grading, and admin and use AI to create more engaging, personalised learning experiences.</p>
+            <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:1rem;"><span style="font-size:0.78rem;font-weight:600;color:var(--muted);background:var(--cream);padding:0.25rem 0.7rem;border-radius:100px;border:1px solid var(--border);">Coming This Year</span></div>
+            <div class="book-actions"><a href="mailto:jotswrites@gmail.com?subject=Notify me: AI Playbook for Educators" class="btn-sm btn-sm-ghost">Notify Me</a></div>
+          </div>
+        </div>
+
+        <div class="book-item">
+          <div class="book-cover cover-1"><span class="coming-tag">Coming Soon</span><div class="cover-icon">&#128640;</div><div class="cover-series">AI Productivity Playbook · Vol. 9</div><div class="cover-title">For Entrepreneurs &amp; Solopreneurs</div></div>
+          <div class="book-info">
+            <h3>AI Productivity Playbook for Entrepreneurs &amp; Solopreneurs</h3>
+            <p>Run leaner, move faster, and compete smarter — a founder's guide to using AI as your ultimate business co-pilot.</p>
+            <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:1rem;"><span style="font-size:0.78rem;font-weight:600;color:var(--muted);background:var(--cream);padding:0.25rem 0.7rem;border-radius:100px;border:1px solid var(--border);">Coming This Year</span></div>
+            <div class="book-actions"><a href="mailto:jotswrites@gmail.com?subject=Notify me: AI Playbook for Entrepreneurs" class="btn-sm btn-sm-ghost">Notify Me</a></div>
+          </div>
+        </div>
+
+        <div class="book-item">
+          <div class="book-cover cover-2"><span class="coming-tag">Coming Soon</span><div class="cover-icon">&#128227;</div><div class="cover-series">AI Productivity Playbook · Vol. 10</div><div class="cover-title">For Digital Marketers</div></div>
+          <div class="book-info">
+            <h3>AI Productivity Playbook for Digital Marketers</h3>
+            <p>Run smarter campaigns, automate reporting, and generate more ROI using AI across every digital marketing channel.</p>
+            <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:1rem;"><span style="font-size:0.78rem;font-weight:600;color:var(--muted);background:var(--cream);padding:0.25rem 0.7rem;border-radius:100px;border:1px solid var(--border);">Coming This Year</span></div>
+            <div class="book-actions"><a href="mailto:jotswrites@gmail.com?subject=Notify me: AI Playbook for Digital Marketers" class="btn-sm btn-sm-ghost">Notify Me</a></div>
+          </div>
+        </div>
+
+        <div class="book-item">
+          <div class="book-cover cover-3"><span class="coming-tag">Coming Soon</span><div class="cover-icon">&#127916;</div><div class="cover-series">AI Productivity Playbook · Vol. 11</div><div class="cover-title">For Video Editors &amp; Creators</div></div>
+          <div class="book-info">
+            <h3>AI Productivity Playbook for Video Editors &amp; Creators</h3>
+            <p>Edit faster, script smarter, and grow your audience — the complete AI toolkit for modern video creators and editors.</p>
+            <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:1rem;"><span style="font-size:0.78rem;font-weight:600;color:var(--muted);background:var(--cream);padding:0.25rem 0.7rem;border-radius:100px;border:1px solid var(--border);">Coming This Year</span></div>
+            <div class="book-actions"><a href="mailto:jotswrites@gmail.com?subject=Notify me: AI Playbook for Video Creators" class="btn-sm btn-sm-ghost">Notify Me</a></div>
+          </div>
+        </div>
+
+        <div class="book-item">
+          <div class="book-cover cover-4"><span class="coming-tag">Coming Soon</span><div class="cover-icon">&#127968;</div><div class="cover-series">AI Productivity Playbook · Vol. 12</div><div class="cover-title">For Real Estate Agents</div></div>
+          <div class="book-info">
+            <h3>AI Productivity Playbook for Real Estate Agents</h3>
+            <p>Generate leads, write listings, and close deals faster — a practical AI guide for real estate agents ready to work smarter.</p>
+            <div style="display:flex;align-items:center;gap:0.6rem;margin-bottom:1rem;"><span style="font-size:0.78rem;font-weight:600;color:var(--muted);background:var(--cream);padding:0.25rem 0.7rem;border-radius:100px;border:1px solid var(--border);">Coming This Year</span></div>
+            <div class="book-actions"><a href="mailto:jotswrites@gmail.com?subject=Notify me: AI Playbook for Real Estate Agents" class="btn-sm btn-sm-ghost">Notify Me</a></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="roadmap">
+        <h3>&#128205; Series Roadmap — 12 Books This Year</h3>
+        <p>Here's the full release plan for the AI Productivity Playbook series.</p>
+        <div class="roadmap-items">
+          <div class="roadmap-item"><div class="roadmap-dot dot-done">&#10003;</div><div class="roadmap-label">Vol. 1 — Virtual Assistants</div><div class="roadmap-status status-done">Published</div></div>
+          <div class="roadmap-item"><div class="roadmap-dot dot-next">&#8594;</div><div class="roadmap-label">Vol. 2 — Social Media Managers</div><div class="roadmap-status status-next">In Progress</div></div>
+          <div class="roadmap-item"><div class="roadmap-dot dot-soon">3</div><div class="roadmap-label">Vol. 3 — Data Analysts</div><div class="roadmap-status status-soon">Coming</div></div>
+          <div class="roadmap-item"><div class="roadmap-dot dot-soon">4</div><div class="roadmap-label">Vol. 4 — Content Creators &amp; Copywriters</div><div class="roadmap-status status-soon">Coming</div></div>
+          <div class="roadmap-item"><div class="roadmap-dot dot-soon">5</div><div class="roadmap-label">Vol. 5 — Project Managers</div><div class="roadmap-status status-soon">Coming</div></div>
+          <div class="roadmap-item"><div class="roadmap-dot dot-soon">6</div><div class="roadmap-label">Vol. 6 — Customer Support Specialists</div><div class="roadmap-status status-soon">Coming</div></div>
+          <div class="roadmap-item"><div class="roadmap-dot dot-soon">7</div><div class="roadmap-label">Vol. 7 — Graphic Designers</div><div class="roadmap-status status-soon">Coming</div></div>
+          <div class="roadmap-item"><div class="roadmap-dot dot-soon">8</div><div class="roadmap-label">Vol. 8 — Educators &amp; Teachers</div><div class="roadmap-status status-soon">Coming</div></div>
+          <div class="roadmap-item"><div class="roadmap-dot dot-soon">9</div><div class="roadmap-label">Vol. 9 — Entrepreneurs &amp; Solopreneurs</div><div class="roadmap-status status-soon">Coming</div></div>
+          <div class="roadmap-item"><div class="roadmap-dot dot-soon">10</div><div class="roadmap-label">Vol. 10 — Digital Marketers</div><div class="roadmap-status status-soon">Coming</div></div>
+          <div class="roadmap-item"><div class="roadmap-dot dot-soon">11</div><div class="roadmap-label">Vol. 11 — Video Editors &amp; Creators</div><div class="roadmap-status status-soon">Coming</div></div>
+          <div class="roadmap-item"><div class="roadmap-dot dot-soon">12</div><div class="roadmap-label">Vol. 12 — Real Estate Agents</div><div class="roadmap-status status-soon">Coming</div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-info">
+      <span class="section-tag">Get in Touch</span>
+      <h2 class="section-title">Let's connect.</h2>
+      <p class="section-sub">Have a question about a book? Want to collaborate, get a review copy, or just say hi? I'd love to hear from you.</p>
+      <div class="contact-links">
+        <a class="contact-link" href="mailto:jotswrites@gmail.com">
+          <span class="contact-link-icon">&#9993;&#65039;</span>
+          <span>jotswrites@gmail.com</span>
+        </a>
+      </div>
+    </div>
+    <div class="contact-form">
+      <h3>Send a Message</h3>
+      <form action="https://formspree.io/f/mbdzbbgr" method="POST" id="contact-form">
+        <div class="form-group"><label>Your Name</label><input type="text" name="name" placeholder="e.g. Jane Smith" required /></div>
+        <div class="form-group"><label>Email Address</label><input type="email" name="email" placeholder="you@example.com" required /></div>
+        <div class="form-group"><label>Subject</label>
+          <select name="subject">
+            <option>Book Inquiry</option>
+            <option>Collaboration</option>
+            <option>Review Copy</option>
+            <option>General Question</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-group"><label>Message</label><textarea name="message" placeholder="Write your message here..." required></textarea></div>
+        <button type="submit" class="btn btn-primary" style="width:100%;margin-top:0.5rem;">Send Message</button>
+        <p id="form-status" style="margin-top:1rem;font-size:0.85rem;text-align:center;color:var(--accent);display:none;">Message sent! I will get back to you soon.</p>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-logo">Jots<span>writes</span></div>
+    <ul class="footer-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#books">Books</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <p>&#169; 2025 Jotswrites. All rights reserved. jotswrites.com</p>
+  </footer>
+
+  <script>
+    var form = document.getElementById('contact-form');
+    var status = document.getElementById('form-status');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      var data = new FormData(form);
+      fetch(form.action, {
+        method: 'POST',
+        body: data,
+        headers: { 'Accept': 'application/json' }
+      }).then(function(res) {
+        if (res.ok) {
+          form.reset();
+          status.style.display = 'block';
+          setTimeout(function(){ status.style.display = 'none'; }, 5000);
+        } else {
+          status.textContent = 'Something went wrong. Please email me directly.';
+          status.style.display = 'block';
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
